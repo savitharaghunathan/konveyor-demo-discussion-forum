@@ -9,7 +9,9 @@
 </head>
 <body>
 	<div class="container text-center">
-	
+	<th:block sec:authorize="!isAuthenticated()">
+            <a th:href="@{/login}">Login</a>
+      </th:block>
 			<div>
 		<form th:action="@{/logout}" method="post">
 			<p>

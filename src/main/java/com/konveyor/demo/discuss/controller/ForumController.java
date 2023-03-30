@@ -29,6 +29,14 @@ public class ForumController {
 		model.addAttribute("allPosts",allPosts);
 		return "viewAllPosts";
 	}
+	@GetMapping("/getPostsbyUsername")
+	public String getPostsbyUsername(@AuthenticationPrincipal CustomUserDetails userdetails,Model model) {
+		String email = userdetails.getUsername();
+		List<Forum> allPosts = forumService.getAllForumPostsByUser(email);
+		model.addAttribute("allPosts",allPosts);
+		return "viewUserPosts";
+	}
+	
 	// 
 	@RequestMapping(path="/addforumpost", method= RequestMethod.POST)
     public String addForumPost(@AuthenticationPrincipal CustomUserDetails userdetails,Forum forum){

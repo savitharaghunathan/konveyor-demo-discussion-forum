@@ -3,8 +3,11 @@ package com.konveyor.demo.discuss.service;
 import java.util.Date;
 import java.util.List;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import com.konveyor.demo.discuss.model.CustomUserDetails;
@@ -17,17 +20,18 @@ public class ForumService {
 	@Autowired
 	ForumRepository forum;
 	
-	
+	@Cacheable(value  = "allforum")
 	public List<Forum> getAllForumPosts(){
 		return (List<Forum>) forum.findAll();
 	}
 	
-	
+	@Cacheable(value  = "allforum")
 	 public List<Forum> getAllForumPostsByUser(String email){
 	        return forum.findByUserEmail(email);
 	    }
-	 
-
+	
+	  
+	@Cacheable(value  = "allforum")
 	    public Forum addForumPost(CustomUserDetails userdetails,Forum forumPost){
 	   
 	    	forumPost.setUserEmail(userdetails.getUsername());
