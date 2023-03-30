@@ -1,2 +1,12 @@
+/Users/sraghuna/local_dev/eclipse_workspace/discuss/src/main/java/com/konveyor/demo/discuss/security/WebSecurityConfiguration.java
+/Users/sraghuna/local_dev/eclipse_workspace/discuss/src/main/java/com/konveyor/demo/discuss/controller/ForumController.java
+/Users/sraghuna/local_dev/eclipse_workspace/discuss/src/main/java/com/konveyor/demo/discuss/repository/ForumRepository.java
+/Users/sraghuna/local_dev/eclipse_workspace/discuss/src/main/java/com/konveyor/demo/discuss/model/CustomUserDetails.java
+/Users/sraghuna/local_dev/eclipse_workspace/discuss/src/main/java/com/konveyor/demo/discuss/model/User.java
+/Users/sraghuna/local_dev/eclipse_workspace/discuss/src/main/java/com/konveyor/demo/discuss/service/ForumService.java
 /Users/sraghuna/local_dev/eclipse_workspace/discuss/src/main/java/com/konveyor/demo/discuss/ServletInitializer.java
 /Users/sraghuna/local_dev/eclipse_workspace/discuss/src/main/java/com/konveyor/demo/discuss/DiscussApplication.java
+/Users/sraghuna/local_dev/eclipse_workspace/discuss/src/main/java/com/konveyor/demo/discuss/repository/UserRepository.java
+/Users/sraghuna/local_dev/eclipse_workspace/discuss/src/main/java/com/konveyor/demo/discuss/controller/AppController.java
+/Users/sraghuna/local_dev/eclipse_workspace/discuss/src/main/java/com/konveyor/demo/discuss/model/Forum.java
+/Users/sraghuna/local_dev/eclipse_workspace/discuss/src/main/java/com/konveyor/demo/discuss/service/CustomUserDetailsService.java
